@@ -1,3 +1,149 @@
+@import "basic-option.css";
+
 .hidden {
   display: none;
+}
+
+*:not(img) {
+  z-index: 1;
+}
+
+body {
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-column {
+  width: 410px;
+  height: 530px;
+  background-color: #e1f5fe;
+  border-radius: 20px;
+  margin: 40px 0 0 30px;
+}
+
+.first-column h3 {
+  padding: 5px 10px;
+  font-size: 30px;
+  color: #0277bd;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#todo-form input {
+  background-color: transparent;
+  width: 100%;
+  height: 20px;
+  margin: 10px 0 25px 0;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #0277bd;
+  font-weight: 600;
+}
+
+#todo-form input::placeholder {
+  color: #0277bd;
+  opacity: 0.4;
+  font-weight: 600;
+}
+
+.first-column .list-row {
+  margin-left: 20px;
+  font-size: 15px;
+  color: #002f6c;
+}
+
+.first-column .deleteBtn {
+  background-color: transparent;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting {
+  font-size: 80px;
+  font-weight: 700;
+  margin: 90px 0 40px 0;
+  color: #1565c0;
+}
+
+#login-form input {
+  width: 250px;
+  height: 45px;
+  border-radius: 20px;
+}
+
+#login-form input::placeholder {
+  color: #003c8f;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#login-form button {
+  height: 45px;
+  border-radius: 20px;
+  color: #003c8f;
+  font-weight: 600;
+}
+
+.third-column {
+  width: 410px;
+  height: 230px;
+  background-color: #dae4ef;
+  border-radius: 20px;
+  margin: 40px 30px 0 0;
+}
+
+.third-column #clock {
+  font-size: 70px;
+  color: #002f6c;
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+.third-column #weather {
+  font-size: 30px;
+  color: #0277bd;
+  text-align: center;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #002f6c;
 }

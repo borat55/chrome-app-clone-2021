@@ -20,10 +20,12 @@ function deleteToDo(event){
 function paintingToDo(newTodo){
     const li = document.createElement("li");
     li.id = newTodo.id;
+    li.setAttribute("class", "list-row")
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
     button.innerText = "❌";
+    button.setAttribute("class", "deleteBtn")
     button.addEventListener("click",deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
