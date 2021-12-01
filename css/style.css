@@ -177,12 +177,20 @@ img {
     height: 330px;
     margin-left: 0;
   }
+  #clock,
+  #weather span {
+    font-size: 20px;
+  }
   #greeting {
-    font-size: 30px;
-    margin: 40px 0 20px 0;
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+  }
+  #login-form {
+    margin-bottom: 20px;
   }
   .third-column {
     margin: 0;
+    height: 180px;
   }
   #quote {
     margin-top: 50px;
